@@ -26,4 +26,4 @@ loadImage("/img/tiles.png")
             drawBackground(background, context, sprites);
         })
     })
-}) 
+})
