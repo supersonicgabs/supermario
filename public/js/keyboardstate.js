@@ -16,7 +16,7 @@ export default class KeyboardState {
 
     handleEvent(event){
         const {keyCode} = event;
-
+        
         if(!this.keyMap.has(keyCode)){
             // Did not have key mapped.
             return;

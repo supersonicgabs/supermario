@@ -1,14 +1,13 @@
 import Compositor from "./compositor.js";
 import Timer from "./timer.js";
-import Entity from "./entity.js";
 import {loadLevel} from "./loaders.js";
 import {createMario} from "./entities.js";
 import {loadBackgroundSprites} from "./sprites.js";
 import {createBackgroundLayer, createSpriteLayer} from "./layers.js";
 
-import KeyboardState from "./keyboardstate";
+import Keyboard from "./keyboardstate.js";
 
-const input = new KeyboardState();
+const input = new Keyboard();
 input.addMapping(32, keyState => {
     console.log(keyState);
 });
